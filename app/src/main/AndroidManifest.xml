@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.zhangzhanghengye.lx">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name="com.example.zhangzhanghengye.intr.Main2Activity" />
+        <activity android:name="com.example.zhangzhanghengye.intr.bean.activity.NewsCotentActivity" />
+
+        <receiver
+            android:name="com.example.zhangzhanghengye.intr.bean.receiver.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="com.example.zhangzhanghengye.contentp.MyContentProvider"
+            android:authorities="com.exampler.zhangzhanghengye.lx"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.zhangzhanghengye.tongzhi.Main3Activity" />
+        <activity android:name="com.example.zhangzhanghengye.tongzhi.NoActivity" />
+        <!-- 照相的内容提供者 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.example.zhangzhanghengye.imagegroup.Main4Activity" />
+        <activity android:name="com.example.zhangzhanghengye.imagegroup.ImageContentActivity" />
+        <activity android:name="com.example.zhangzhanghengye.webview.WebViewActivity" />
+        <activity android:name="com.example.zhangzhanghengye.servicexz.XiaZaiActivity" />
+
+        <service
+            android:name="com.example.zhangzhanghengye.servicexz.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.zhangzhanghengye.materialdesign.NoActionActivity">
+
+        </activity>
+        <activity android:name="com.example.zhangzhanghengye.materialdesign.CollToolbarActivity" />
+        <activity android:name="com.example.zhangzhanghengye.view.Main5Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

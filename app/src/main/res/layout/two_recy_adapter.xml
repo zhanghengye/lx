@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="aa"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="北京" />
+
+        <ImageView
+            android:id="@+id/gd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/fenxiang" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="112dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/huifu" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="112dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img1"
+            android:src="@drawable/huifu" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="112dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img2"
+            android:src="@drawable/huifu" />
+
+        <TextView
+            android:id="@+id/duozhang"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/img3"
+            android:layout_alignBottom="@id/img3"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/back9"
+            android:text="9张"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/plMessage"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="14dp"
+        android:text="山东栖霞市素有“胶东屋脊”之称，面积2017平方公里，主要地形为丘陵山地，有“六山一水三分田”之特点。这样的地理... ..."
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="16dp"
+        />
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/spIcon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/back9"
+            />
+        <TextView
+            android:id="@+id/spName"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spIcon"
+            android:text="111"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/spzl"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spIcon"
+            android:text="111"
+            android:layout_below="@id/spName"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginLeft="11dp"
+            />
+        <TextView
+            android:id="@+id/spjf"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spIcon"
+            android:text="111"
+            android:layout_below="@id/spzl"
+            android:layout_marginLeft="11dp"
+            android:layout_alignBottom="@id/spIcon"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        >
+        <TextView
+            android:id="@+id/plTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:text="1周前"
+            />
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/huifu"
+            android:layout_marginLeft="133dp"
+            />
+        <TextView
+            android:id="@+id/plStatistics"
+            android:text="1000"
+            android:layout_marginLeft="5dp"
+            android:textColor="#211C27"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="13dp"
+            android:src="@drawable/shoucang"
+            android:layout_marginLeft="47dp"
+            />
+        <TextView
+            android:id="@+id/scStatistics"
+            android:text="1000"
+            android:layout_marginLeft="6dp"
+            android:textColor="#211C27"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
